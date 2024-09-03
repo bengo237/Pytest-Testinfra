@@ -1,1 +1,2 @@
+[![Build and Push Pytest Docker Image](https://github.com/bengo237/Pytest-Testinfra/actions/workflows/pytest.yml/badge.svg)](https://github.com/bengo237/Pytest-Testinfra/actions/workflows/pytest.yml)
 # Pytest-Testinfra
