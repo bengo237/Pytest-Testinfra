@@ -13,9 +13,5 @@ RUN apt-get update && apt-get install -y \
 # Install pytest and testinfra
 RUN pip install pytest pytest-testinfra
 
-# Copy the test files into the image
-WORKDIR /app
-COPY . /app
-
 # Set the entry point to run the tests
 ENTRYPOINT ["pytest", "-v"]
