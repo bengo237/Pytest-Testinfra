@@ -17,11 +17,5 @@ RUN pip install pytest pytest-testinfra
 WORKDIR /app
 COPY . /app
 
-# Ensure the install.sh script is executable
-RUN chmod +x /app/scripts/install.sh
-
-# Optionally run the install script if needed
-# RUN /app/scripts/install.sh
-
 # Set the entry point to run the tests
 ENTRYPOINT ["pytest", "-v"]
