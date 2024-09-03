@@ -3,7 +3,7 @@ name: Build and Push Pytest Docker Image
 on:
   push:
     branches:
-    - main
+      - main
 
 jobs:
   build:
@@ -29,5 +29,5 @@ jobs:
         context: .
         file: ./Dockerfile
         push: true
-        tags: ghcr.io/bengo237/pytest-testinfra:latest
+        tags: ghcr.io/${{ github.repository }}/pytest-testinfra:latest
         platforms: linux/amd64,linux/arm64
